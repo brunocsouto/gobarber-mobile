@@ -28,7 +28,7 @@ const AppointmentCreated: React.FC = () => {
       "EEEE', dia' dd 'de' MMMM 'de' yyyy 'às' HH:mm'h'",
       { locale: ptBR },
     );
-  }, []);
+  }, [routeParams.date]);
 
   const handleOkPressed = useCallback(() => {
     reset({
